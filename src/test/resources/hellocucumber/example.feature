@@ -1,6 +1,10 @@
 Feature: A Roman to Cardinal numbers converter
 
-  Scenario: Convert a single digit number
-    Given "V" to be converted as cardinal
+  Scenario Outline: Convert a single digit number
+    Given "<number>" to be converted as cardinal
     When it gets converted
-    Then the scenario passes
+    Then the cardinal result is "<result>"
+
+    Examples:
+      | number | result |
+      | V      | 5      |
