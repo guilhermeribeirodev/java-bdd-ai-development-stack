@@ -8,4 +8,6 @@ Feature: A Roman to Cardinal numbers converter
     Examples:
       | number | result |
       | I      | 1      |
+      | III    | 3      |
+      | IV     | 4      |
       | V      | 5      |
