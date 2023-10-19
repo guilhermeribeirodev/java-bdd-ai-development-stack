@@ -7,6 +7,7 @@ Feature: A Roman to Cardinal numbers converter
 
     Examples:
       | number | result |
+      | NON R  | 0      |
       | I      | 1      |
       | III    | 3      |
       | IV     | 4      |

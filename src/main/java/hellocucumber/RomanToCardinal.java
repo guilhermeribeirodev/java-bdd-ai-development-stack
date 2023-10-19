@@ -12,6 +12,6 @@ public class RomanToCardinal {
             case "V":
                 return 5;
         }
-        return 1;
+        return 0;
     }
 }
