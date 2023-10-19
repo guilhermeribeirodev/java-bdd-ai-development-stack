@@ -11,3 +11,8 @@ Feature: A Roman to Cardinal numbers converter
       | III    | 3      |
       | IV     | 4      |
       | V      | 5      |
+
+
+  Scenario: Format validation
+    Given the roman input "A" is not valid
+    Then the error is displayed
