@@ -22,6 +22,6 @@ public class StepDefinitions {
 
     @Then("the cardinal result is {string}")
     public void theScenarioPasses(String result) {
-        Assertions.assertEquals(5, Integer.valueOf(result));
+        Assertions.assertEquals(result, String.valueOf(converted));
     }
 }
