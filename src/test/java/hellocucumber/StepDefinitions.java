@@ -3,12 +3,11 @@ package hellocucumber;
 import io.cucumber.java.en.*;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assertions.*;
 
 public class StepDefinitions {
 
     String number = "";
-    int result = 0;
+    int converted = 0;
 
     @Given("{string} to be converted as cardinal")
     public void anExampleScenario(String number) {
@@ -18,11 +17,11 @@ public class StepDefinitions {
 
     @When("it gets converted")
     public void allStepDefinitionsAreImplemented() {
-        result = RomanToCardinal.convert(number);
+        converted = RomanToCardinal.romanToInteger(number);
     }
 
-    @Then("the scenario passes")
-    public void theScenarioPasses() {
-        Assertions.assertEquals(5, result );
+    @Then("the cardinal result is {string}")
+    public void theScenarioPasses(String result) {
+        Assertions.assertEquals(result, String.valueOf(converted));
     }
 }
