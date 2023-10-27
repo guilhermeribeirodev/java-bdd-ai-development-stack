@@ -17,7 +17,7 @@ public class StepDefinitions {
 
     @When("it gets converted")
     public void allStepDefinitionsAreImplemented() {
-        converted = RomanToCardinal.convert(number);
+        converted = RomanToCardinal.romanToInteger(number);
     }
 
     @Then("the cardinal result is {string}")

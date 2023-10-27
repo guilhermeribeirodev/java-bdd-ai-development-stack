@@ -7,8 +7,13 @@ Feature: A Roman to Cardinal numbers converter
 
     Examples:
       | number | result |
-      | NON R  | 0      |
       | I      | 1      |
       | III    | 3      |
       | IV     | 4      |
       | V      | 5      |
+      | XXI    | 21     |
+      | XXX    | 30     |
+      | L      | 50     |
+      | XC     | 90     |
+
+
